@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Search from "./SearchBar";
 import Filter from "./Filter";
-import { FaPenAlt, FaRegEdit, FaSearch, FaTrash } from "react-icons/fa";
+import FacultyTable from "./FacultyTable";
 
 const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
   return (
@@ -29,43 +29,7 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 
         {/* Faculty List */}
         <div className="bg-white shadow-sm rounded-lg p-4 max-h-svh min-w-max overflow-auto">
-          <table className="min-w-full table-auto">
-            <thead>
-              <tr className="text-left bg-gray-100">
-                <th className="p-2">Name</th>
-                <th className="p-2">Employee ID</th>
-                <th className="p-2">Position</th>
-                <th className="p-2">Department</th>
-                <th className="p-2">Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {/* Placeholder for Data */}
-              {[...Array(9)].map((_, index) => (
-                <tr key={index} className="border-b ">
-                  <td className="p-2 flex items-center space-x-2">
-                    <img
-                      src="https://via.placeholder.com/40"
-                      alt="Profile"
-                      className="w-8 h-8 rounded-full"
-                    />
-                    <span>Faculty {index + 1}</span>
-                  </td>
-                  <td className="p-2">2020-12345</td>
-                  <td className="p-2">Professor 1</td>
-                  <td className="p-2">CISTM</td>
-                  <td className="p-2 space-x-3">
-                    <button className="text-blue-500">
-                      <FaRegEdit className="h-6 w-6" />
-                    </button>
-                    <button className="text-red-500">
-                      <FaTrash className="h-6 w-5" />
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <FacultyTable />
         </div>
       </div>
     </div>
