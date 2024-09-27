@@ -8,7 +8,7 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
     <nav className="border-b px-10 py-5 flex justify-between">
       <div className="flex items-center text-xl">
         <FaBars
-          className=" me-4 cursor-pointer"
+          className=" me-4 cursor-pointer hover:text-gray-400"
           onClick={() => setSidebarToggle(!sidebarToggle)}
         />
         <span className=" font-semibold text-gray-700">

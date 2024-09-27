@@ -1,6 +1,6 @@
 import React from "react";
 import { FaTrash, FaPencilAlt } from "react-icons/fa";
-import { PiFiles } from "react-icons/pi";
+import { BsFiles } from "react-icons/bs";
 
 function FacultyTable() {
   return (
@@ -31,13 +31,13 @@ function FacultyTable() {
             <td className="p-2">CISTM</td>
             <td className="p-2 justify-between flex space-x-1">
               <button className="">
-                <PiFiles className="h-6 w-6" />
+                <BsFiles className="h-6 w-6 p-0 hover:text-gray-500" />
               </button>
               <button className="">
-                <FaPencilAlt className="h-6 w-6" />
+                <FaPencilAlt className="h-6 w-6 hover:text-gray-500" />
               </button>
-              <button className="text-red-800">
-                <FaTrash className="h-6 w-5" />
+              <button className="text-red-500">
+                <FaTrash className="h-6 w-5 hover:text-red-400" />
               </button>
             </td>
           </tr>
