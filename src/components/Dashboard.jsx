@@ -14,7 +14,7 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 
       <div className="flex-1 m-1 p-0 md:m-10  md:p-5">
         <div className="lg:flex justify-between m-0 md:m-5">
-          <div className="text-gray-700">
+          <div className="text-gray-700 my-4">
             <h1 className="md:text-3xl font-medium ">PLM Faculty Members</h1>
             <h2>Academic Year 2024-2025</h2>
           </div>

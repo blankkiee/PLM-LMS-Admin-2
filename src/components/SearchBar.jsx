@@ -4,7 +4,7 @@ import { FaBars, FaBell, FaSearch, FaUserCheck } from "react-icons/fa";
 const Search = () => {
   return (
     <>
-      <div className="relative md:w-65 my-5">
+      <div className="relative md:w-65 my-4">
         <span className=" absolute inset-y-1 left-0 flex items-center pl-2">
           <button className="p-1 focus:outline-none text-gray-700 md:text-black">
             <FaSearch />

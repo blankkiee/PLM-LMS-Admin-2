@@ -1,5 +1,7 @@
 import React from "react";
+import ProfileDropdown from "./NavComponents/ProfileDropdown";
 import { FaBars, FaBell, FaUser } from "react-icons/fa";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
   return (
@@ -14,26 +16,20 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
         </span>
       </div>
       <div className="flex items-center gap-x-5">
-        <div className="">
+        <div className="items-center">
           <FaBell className="w-6 h-6" />
         </div>
 
         <div className="realtive">
+          <button className=" group flex items-center space-x-2">
+            <FaUser className="w-6 h-6 " />
+            <h2>Admin</h2>
+          </button>
+        </div>
+        <div className="realtive">
           <button className=" group">
-            <FaUser className="w-6 h-6 mt-1 " />
-            <div className="bg-gray-200 hidden z-10 absolute rounded-lg shadow w-32 group-focus:block right-5">
-              <ul className="py-2 text-sm text-gray-500 font-medium">
-                <li className="">
-                  <a href="">Profile</a>
-                </li>
-                <li>
-                  <a href="">Settings</a>
-                </li>
-                <li>
-                  <a href="">Log out</a>
-                </li>
-              </ul>
-            </div>
+            <RiArrowDropDownLine className="w-6 h-6 mt-1 " />
+            <ProfileDropdown />
           </button>
         </div>
       </div>
