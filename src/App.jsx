@@ -15,8 +15,6 @@ function App() {
         setSidebarToggle={setSidebarToggle}
       />
     </div>
-
-    // {/* <div> This is content</div> */}
   );
 }
 
