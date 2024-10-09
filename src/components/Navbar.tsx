@@ -17,8 +17,8 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
         </span>
       </div>
       <div className="flex items-center gap-x-5">
-        <div className="items-center">
-          <button className="group">
+        <div className="">
+          <button className="group mt-1.5">
             <FaBell className="w-6 h-6" />
             <NotificationIconDropdown />
           </button>
