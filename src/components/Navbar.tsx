@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileDropdown from "./NavComponents/ProfileDropdown";
+import NotificationIconDropdown from "./NavComponents/NotificationIconDropdown";
 import { FaBars, FaBell, FaUser } from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
@@ -17,7 +18,10 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
       </div>
       <div className="flex items-center gap-x-5">
         <div className="items-center">
-          <FaBell className="w-6 h-6" />
+          <button className="group">
+            <FaBell className="w-6 h-6" />
+            <NotificationIconDropdown />
+          </button>
         </div>
 
         <div className="realtive">

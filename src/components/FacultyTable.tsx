@@ -12,13 +12,13 @@ function FacultyTable() {
     any | null
   >(null); // To hold selected faculty details
 
-  // For  delete button click
+  // For  delete button kapag niclick
   const handleDeleteClick = (facultyName: string) => {
     setSelectedFaculty(facultyName);
     setIsModalOpen(true);
   };
 
-  // Close the delete confirmation modal
+  // close or hide yung delete confirmation modal
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setSelectedFaculty(null);
@@ -29,22 +29,23 @@ function FacultyTable() {
     console.log(`Deleted faculty: ${selectedFaculty}`);
     setIsModalOpen(false);
     setSelectedFaculty(null);
-    // Add logic to delete the faculty from the data
+    // Add logic here para sa delete ng faculty from the data
   };
 
-  // Handles the view button click to show faculty details
+  // Handles yung pag click ng view button to show faculty details
   const handleViewClick = (faculty: any) => {
     setSelectedFacultyDetails(faculty);
     setFacultyDetailsOpen(true);
   };
 
-  // Closes the faculty details view
+  // Closes the faculty details na view
   const handleCloseFacultyDetails = () => {
     setFacultyDetailsOpen(false);
     setSelectedFacultyDetails(null);
   };
 
-  // Sample data for the faculty
+  // ***********Sample data for the faculty****************
+  //Array(9) = 9 na Faculty samples
   const facultyData = [...Array(9)].map((_, index) => ({
     name: `Faculty ${index + 1}`,
     position: "Professor 1",
@@ -65,6 +66,7 @@ function FacultyTable() {
     },
   }));
 
+  // Actual UI Design
   return (
     <>
       <table className="min-w-full table-auto">
