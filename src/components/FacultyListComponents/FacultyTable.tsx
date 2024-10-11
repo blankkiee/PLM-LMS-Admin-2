@@ -1,8 +1,8 @@
 import React from "react";
-import useFacultyTable from "../useFacultyTable"; // Adjust the path as necessary
+import useFacultyTable from "../useFacultyTable";
 import DeleteConfirmationModal from "../TableActionButtons/DeleteConfirmationModal";
 import FacultyDetails from "../TableActionButtons/FacultyDetails";
-import FacultyRow from "./FacultyRow"; // Import the new FacultyRow component
+import FacultyRow from "./FacultyRow";
 
 function FacultyTable() {
   const {
@@ -15,6 +15,7 @@ function FacultyTable() {
     handleDeleteConfirm,
     handleViewClick,
     handleCloseFacultyDetails,
+    handleAddFaculty,
   } = useFacultyTable(); // NASA useFacultyTable.tsx YUNG MGA LAMAN NG FUNCTIONS NA 'TO
 
   // Sample data ng mga faculty faculty Array(9)

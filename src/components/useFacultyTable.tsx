@@ -8,6 +8,16 @@ const useFacultyTable = () => {
   const [selectedFacultyDetails, setSelectedFacultyDetails] = useState<
     any | null
   >(null);
+  const [facultyData, setFacultyData] = useState<any[]>([
+    // Initial sample data
+    {
+      name: "Faculty 1",
+      employeeId: "2020-12345",
+      position: "Professor 1",
+      department: "CISTM",
+    },
+    // Other initial data
+  ]);
 
   const handleDeleteClick = (facultyName: string) => {
     setSelectedFaculty(facultyName);
@@ -36,17 +46,23 @@ const useFacultyTable = () => {
     setSelectedFacultyDetails(null);
   };
 
-  // THESE isisisisi **************
+  const handleAddFaculty = (newFaculty: any) => {
+    setFacultyData((prev) => [...prev, newFaculty]);
+  };
+
+  // THESE isisisisi**************
   return {
     isModalOpen,
     selectedFaculty,
     facultyDetailsOpen,
     selectedFacultyDetails,
+    facultyData,
     handleDeleteClick,
     handleCloseModal,
     handleDeleteConfirm,
     handleViewClick,
     handleCloseFacultyDetails,
+    handleAddFaculty,
   };
 };
 

@@ -20,7 +20,7 @@ interface FacultyDetailsProps {
       courses: string[];
     };
   };
-  onClose: () => void; // Close the details modal
+  onClose: () => void; // Close  details modal
   onEdit: () => void; // Add this line to fix the error
 }
 
@@ -116,7 +116,7 @@ const FacultyDetails: React.FC<FacultyDetailsProps> = ({
             ) : (
               <button
                 onClick={handleEditClick}
-                className="mt-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+                className="mt-2 bg-indigo-700 text-white px-4 py-2 rounded-lg hover:bg-indigo-600"
               >
                 Edit Information
               </button>

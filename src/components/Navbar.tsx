@@ -6,20 +6,20 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
   return (
-    <nav className="border-b px-10 py-5 flex justify-between">
+    <nav className="border-b px-10 py-5 flex justify-between bg-indigo-700 text-white">
       <div className="flex items-center text-xl">
         <FaBars
           className=" me-4 cursor-pointer hover:text-gray-400"
           onClick={() => setSidebarToggle(!sidebarToggle)}
         />
-        <span className=" font-semibold text-gray-700">
+        <span className=" font-semibold text-white">
           <h1>Faculty List</h1>{" "}
         </span>
       </div>
       <div className="flex items-center gap-x-5">
         <div className="">
           <button className="group mt-1.5">
-            <FaBell className="w-6 h-6" />
+            <FaBell className="w-6 h-6 hover:text-gray-400" />
             <NotificationIconDropdown />
           </button>
         </div>
@@ -32,7 +32,7 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
         </div>
         <div className="realtive">
           <button className=" group">
-            <RiArrowDropDownLine className="w-6 h-6 mt-1 " />
+            <RiArrowDropDownLine className="w-6 h-6 mt-1 hover:text-gray-400" />
             <ProfileDropdown />
           </button>
         </div>
