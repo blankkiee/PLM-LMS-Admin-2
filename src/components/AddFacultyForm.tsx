@@ -13,8 +13,10 @@ const AddFacultyForm = ({ onClose, onAdd }) => {
     college: "",
     employeeId: "",
     employmentStatus: "",
-  });
+  }); //1. Here kumukuha/ginagamit to show values (e.g. newFaculty.firstName, newFaculty.lastName etc.)
+  //2. You CAN update or revise this for backend Functionality
 
+  // Sample functions sa panhandle ng mga actions
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewFaculty((prev) => ({
@@ -202,12 +204,11 @@ const AddFacultyForm = ({ onClose, onAdd }) => {
                     className="w-full p-2 border rounded"
                     required
                   >
+                    {/* options for the dropdown */}
                     <option value="">Select Status</option>
                     <option value="Full-time">Full-time</option>
                     <option value="Part-time">Part-time</option>
                     <option value="Contractual">Contractual</option>
-                    <option value="Probationary">Probationary</option>
-                    <option value="Tenured">Tenured</option>
                   </select>
                 </div>
                 <div className="flex justify-between space-x-2">

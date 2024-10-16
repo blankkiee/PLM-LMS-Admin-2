@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-// ************************   GINAMIT KO LAHAT 'TO SA FACULTY TABLE *************************
+// ************************   GINAMIT KO LAHAT 'TO SA FacultyTable.tsx *************************
+// You might wanna update or revise this for backend functionalities
 const useFacultyTable = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedFaculty, setSelectedFaculty] = useState<string | null>(null);
